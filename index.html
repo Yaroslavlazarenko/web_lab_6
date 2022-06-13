@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>lab-6</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>
+                <span data-section="one">Slide one</span>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <div class="slider">Slider</div>
+                    <div class="dropdown-content">
+                        <a href="#slider">Slide1</a>
+                        <a href="#slider/Slide2">Slide2</a>
+                        <a href="#slider/Slide3">Slide3</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span data-section="three">Slide three</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="fullpage">
+
+        <div data-index="0" data-anchor="one" class="section">
+            <div class="bg" style="background-image: url(img/one.jpg)"></div>
+            <div class="content">
+                <h2 class="title">One</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam saepe odio voluptate
+                    dolor cumque, rerum quis magnam non veniam molestias totam libero nobis at cupiditate rem incidunt
+                    necessitatibus quia tenetur.</p>
+            </div>
+        </div>
+
+        <div data-index="1" class="section" data-anchor="slider" id="section2">
+
+            <div class="slide" data-anchor="slider">
+                <div class="bg" style="background-image: url(img/slider.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">Slider</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, aliquid, cumque
+                        earum sint tenetur provident non similique corrupti quam doloribus mollitia ipsa tempore neque
+                        quisquam quasi magni sit. Tempora, iste.</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Slide2">
+                <div class="bg" id="bg2" style="background-image: url(img/slide2.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">Slide2</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptate a aut
+                        harum cupiditate, cumque dolor optio ullam architecto omnis exercitationem debitis minima eius
+                        autem illum eos, molestiae amet voluptatem.</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Slide3">
+                <div class="bg" id="bg3" style="background-image: url(img/slide3.jpg) "></div>
+                <div class="content">
+                    <h2 class="title">Slide3</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi optio eligendi
+                        sapiente deleniti earum dolorum voluptatum modi ab nam voluptates quia esse laborum quos autem,
+                        velit itaque in, sunt nisi?</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-index="2" data-anchor="three" class="section">
+            <div class="bg" style="background-image: url(img/three.jpg)"></div>
+            <div class="content">
+                <h2 class="title">Slide three</h2>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptatum consequuntur
+                    error natus libero doloribus iste neque consectetur cupiditate cumque. Sequi nesciunt sapiente,
+                    earum quis adipisci molestiae. Quae, blanditiis eius!</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
